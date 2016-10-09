@@ -42,8 +42,6 @@ class FormController extends Controller
 
         $formDate = $request->input('Form');
         if ($formDate !== null && $request->isMethod("post")) {
-            $so = \Message::ONE;
-            dd($so);
             // 控制器验证
 //            $this->validate($request, $check, $message, $property);
 

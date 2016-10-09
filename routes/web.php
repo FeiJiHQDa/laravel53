@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 
 Route::group(['middleware' => ['web']], function () {
@@ -24,4 +24,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::any('form/detail/{id}', ['uses' => 'FormController@detail']);
     Route::any('form/update/{id}', ['uses' => 'FormController@update']);
     Route::any('form/delete/{id}', ['uses' => 'FormController@delete']);
+
+    Route::post('/testJson', ['uses' => 'TextController@textArrayJson']);
 });
