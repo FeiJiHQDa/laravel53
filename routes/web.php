@@ -11,9 +11,9 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
 
 Route::group(['middleware' => ['web']], function () {
@@ -27,3 +27,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::post('/testJson', ['uses' => 'TextController@textArrayJson']);
 });
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

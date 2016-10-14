@@ -19,6 +19,6 @@ use Illuminate\Http\Request;
 //})->middleware('auth:api');
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
