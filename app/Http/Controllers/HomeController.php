@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        print_r(Auth::user());
+//        print_r(Auth::user());
         return view('home');
     }
 }

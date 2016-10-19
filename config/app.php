@@ -178,6 +178,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //权限
+        Zizaco\Entrust\EntrustServiceProvider::class,
     ],
 
     /*
@@ -225,6 +227,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        // 权限
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
     ],
 
 ];
