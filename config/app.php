@@ -179,7 +179,6 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         //权限
-        Zizaco\Entrust\EntrustServiceProvider::class,
     ],
 
     /*
@@ -228,7 +227,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         // 权限
-        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
     ],
 
 ];
