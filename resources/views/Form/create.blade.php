@@ -1,5 +1,8 @@
 @extends('common.index')
 
+@section('style')
+    <link href="{{ asset('css/datetimepicker.css') }}" rel="stylesheet">
+@endsection
 
 @section('content')
 
@@ -75,6 +78,7 @@
 @section('javascript')
     <script>
         $(".eq-event").eq(1).addClass('active');
+
     </script>
 
-@show
+@endsection

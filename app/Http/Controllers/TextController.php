@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class TextController extends Controller {
 
+    private $tests = '';
     public function textArrayJson(Request $request) {
 
         $data = $request->all();
@@ -20,4 +21,9 @@ class TextController extends Controller {
             'age' => 18
         ]);
     }
+
+    public function thisText() {
+
+    }
 }
+

@@ -35,3 +35,16 @@ Route::group(['middleware' => ['web']], function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+
+Route::group(['middleware' => ['web'], 'prefix' => 'bihu'], function () {
+   Route::any('index.php', 'BiHu\IndexController@index');
+});

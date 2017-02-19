@@ -69,11 +69,11 @@
         </div>
     </div>
 
-@stop
+@endsection
 
 @section('javascript')
     <script>
         $(".eq-event").eq(0).addClass('active');
     </script>
 
-@show
+@endsection

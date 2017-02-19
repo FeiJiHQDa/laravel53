@@ -9,7 +9,7 @@
 namespace App\Http\Controllers;
 
 use Validator;
-use App\Form;
+use App\Models\Form;
 use Illuminate\Http\Request;
 
 class FormController extends Controller
